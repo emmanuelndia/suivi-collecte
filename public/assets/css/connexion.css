@@ -1,0 +1,247 @@
+/* Style général de la page */
+body {
+    /* background-image: url('../../images/image_fond_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+/* Conteneur principal */
+#container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Section Texte */
+#texte {
+    flex: 1;
+    max-width: 100%;
+    margin: auto;
+    font-size: 2em;
+    font-weight: bolder;
+    color: #01ec20;
+    order: 1;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+span {
+    color: #fff;
+}
+
+/* Section Connexion */
+#connexion {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    order: 2;
+}
+
+/* Titre */
+#connexion h1 {
+    font-size: 0.9em;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Messages d'erreur */
+#connexion p[style*="color: red"] {
+    background-color: rgba(248, 215, 218, 0.8);
+    color: #721c24;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    backdrop-filter: blur(5px);
+}
+
+/* Formulaire */
+#connexion form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Labels */
+#connexion label {
+    font-size: 1.1em;
+    color: #fff;
+    text-align: left;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Champs de saisie */
+#connexion input[type="text"],
+#connexion input[type="password"] {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Conteneur mot de passe */
+.password-container {
+    position: relative; /* Positionnement relatif pour contenir l'œil */
+    width: 100%;
+}
+
+/* Pour Chrome, Edge, Opera */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-clear-button,
+input[type="password"]::-webkit-inner-spin-button,
+input[type="password"]::-webkit-outer-spin-button,
+input[type="password"]::-webkit-textfield-decoration-container {
+    display: none !important;
+}
+
+/* Supprime aussi les styles spécifiques */
+input[type="password"]::-webkit-input-decoration {
+    display: none !important;
+}
+
+/* Champ mot de passe avec padding à droite pour l'œil */
+#connexion .password-container input[type="password"] {
+    padding-right: 40px; /* Espace pour l'œil */
+}
+
+
+
+/* Bouton œil positionné à l'intérieur */
+#toggleEye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #080808;
+    font-size: 13px;
+}
+
+
+
+/* Effet au focus */
+#connexion input[type="text"]:focus,
+#connexion input[type="password"]:focus {
+    border-color: #01ec20;
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+
+/* Bouton de connexion */
+#connexion input[type="submit"] {
+    background-color: #01ec20;
+    color: white;
+    padding: 14px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#connexion input[type="submit"]:hover {
+    background-color: #028314;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    /* Réduction du padding global */
+    body {
+        padding: 10px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* Container en colonne */
+    #container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        max-width: 100%;
+    }
+
+    /* Texte centré et adapté */
+    #texte {
+        text-align: center;
+        font-size: 1.5em;
+        order: 1;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Connexion avec largeur fluide */
+    #connexion {
+        width: 100%;
+        max-width: 95%;
+        padding: 20px 15px;
+        order: 2;
+    }
+
+    #connexion h1 {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    #connexion label {
+        font-size: 1em;
+    }
+
+    #connexion input[type="text"],
+    #connexion input[type="password"] {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    #connexion input[type="submit"] {
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    .password-container {
+        width: 100%;
+    }
+
+    #toggleEye {
+        font-size: 14px;
+        right: 10px;
+    }
+
+    #connexion p[style*="color: red"] {
+        font-size: 0.9em;
+    }
+}
