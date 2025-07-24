@@ -86,7 +86,7 @@
 				</div><!--//tab-content-->
 
 
-                <!-- Modal pour l'enregistrement d'un collecté -->
+                {{-- <!-- Modal pour l'enregistrement d'un collecté -->
                 <div class="modal fade" id="modalAjoutPersonne" tabindex="-1" aria-labelledby="modalAjoutPersonneLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered">
                         <div class="modal-content">
@@ -130,7 +130,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
 
 @endsection

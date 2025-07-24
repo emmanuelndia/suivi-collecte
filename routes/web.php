@@ -42,7 +42,7 @@ Route::middleware('auth')->group(function () {
     Route::get('index', [UserController::class, 'index'])->name('user.index');
 
     // Affichage du formulaire d'enregistrement du collecté
-    Route::prefix('collecte')->group(function () {
+    Route::prefix('user')->group(function () {
         Route::get('/mes-collectes', [UserController::class, 'mescollectes'])->name('user.mes-collectes');
         Route::post('/store', [PersonneCollecteController::class, 'storeFromForm'])->name('collecte.store');
         Route::put('/update/{id}', [PersonneCollecteController::class, 'update'])->name('collecte.update');

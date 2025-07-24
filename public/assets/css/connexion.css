@@ -245,3 +245,18 @@ input[type="password"]::-webkit-input-decoration {
         font-size: 0.9em;
     }
 }
+
+.password-container {
+    position: relative;
+}
+#toggleEye {
+    display: inline-block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 10; /* Assure que le bouton reste au-dessus des autres éléments */
+}
+#eyeIcon {
+    font-size: 1rem;
+    color: #333; /* Couleur visible pour l'icône */
+}
