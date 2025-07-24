@@ -137,46 +137,13 @@
                             <input type="text" name="lieu_residence" id="lieu_residence" class="form-control form-control-lg" required>
                         </div>
 
-                        <div class="col-md-6 mb-3">
-                            <label for="region" class="form-label">
-                                <i class="fas fa-map-marker-alt me-1"></i> Région
-                            </label>
-                            <select name="region" id="region" class="form-control form-control-lg">
-                                <option {{-- value="" --}}>Aucune region selectionnée</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="departement" class="form-label">
-                                <i class="fas fa-map me-1"></i> Département
-                            </label>
-                            <select name="departement" id="departement" class="form-control form-control-lg">
-                                <option {{-- value="" --}}>Aucune departement selectionnée</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="sous-prefecture" class="form-label">
-                                <i class="fas fa-building me-1"></i> Sous-préfecture
-                            </label>
-                            <select name="sous-prefecture" id="sous-prefecture" class="form-control form-control-lg">
-                                <option {{-- value="" --}}>Aucune sous-prefecture selectionnée</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="commune" class="form-label">
-                                <i class="fas fa-city me-1"></i> Commune
-                            </label>
-                            <select name="commune" id="commune" class="form-control form-control-lg">
-                                <option {{-- value="" --}}>Aucune commune selectionnée</option>
-                            </select>
-                        </div>
+
 
                         <div class="col-md-6 mb-3">
                             <label for="lieu_vote" class="form-label">
                                 <i class="fas fa-vote-yea me-1"></i> Lieu de vote
                             </label>
-                            <select name="lieu_vote" id="lieu_vote" class="form-control form-control-lg">
-                                <option value=""></option>
-                            </select>
+                            <input type="text" name="lieu_vote" id="lieu_vote" class="form-control form-control-lg" required>
                         </div>
                     </div>
                 </div>

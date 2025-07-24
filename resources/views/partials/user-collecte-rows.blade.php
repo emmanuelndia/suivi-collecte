@@ -68,35 +68,10 @@
                             <input type="text" name="lieu_residence" id="lieu_residence-{{ $personne->id }}" class="form-control form-control-lg" value="{{ $personne->lieu_residence }}" required>
                         </div>
 
-                        <div class="col-md-6 mb-3">
-                            <label for="region-{{ $personne->id }}" class="form-label"><i class="fas fa-map-marker-alt me-1"></i> Région</label>
-                            <select name="region" id="region-{{ $personne->id }}" class="form-control form-control-lg">
-                                <option {{-- value="{{ $personne->region }}" --}}>Aucune region selectionnée</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="departement-{{ $personne->id }}" class="form-label"><i class="fas fa-map me-1"></i> Département</label>
-                            <select name="departement" id="departement-{{ $personne->id }}" class="form-control form-control-lg">
-                                <option {{-- value="{{ $personne->departement }}" --}}>Aucune departement selectionnée</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="sous-prefecture-{{ $personne->id }}" class="form-label"><i class="fas fa-building me-1"></i> Sous-préfecture</label>
-                            <select name="sous-prefecture" id="sous-prefecture-{{ $personne->id }}" class="form-control form-control-lg">
-                                <option {{-- value="{{ $personne->sous-prefecture }}" --}}>Aucune sous-prefecture selectionnée</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="commune-{{ $personne->id }}" class="form-label"><i class="fas fa-city me-1"></i> Commune</label>
-                            <select name="commune" id="commune-{{ $personne->id }}" class="form-control form-control-lg">
-                                <option {{-- value="{{ $personne->commune }}" --}}>Aucune commune selectionnée</option>
-                            </select>
-                        </div>
+
                         <div class="col-md-6 mb-3">
                             <label for="lieu_vote-{{ $personne->id }}" class="form-label"><i class="fas fa-vote-yea me-1"></i> Lieu de vote</label>
-                            <select name="lieu_vote" id="lieu_vote-{{ $personne->id }}" class="form-control form-control-lg">
-                                <option value="">{{ $personne->lieu_vote }}</option>
-                            </select>
+                            <input type="text" name="lieu_vote" id="lieu_vote-{{ $personne->id }}" class="form-control form-control-lg" value="{{ $personne->lieu_vote }}" required>
                         </div>
                     </div>
                 </div>

@@ -68,35 +68,10 @@
                             <input type="text" name="lieu_residence" id="lieu_residence-{{ $personne->id }}" class="form-control form-control-lg" value="{{ $personne->lieu_residence }}" required>
                         </div>
 
-                        <div class="col-md-6 mb-3">
-                            <label for="region-{{ $personne->id }}" class="form-label">Region</label>
-                            <select name="region" id="region-{{ $personne->id }}" class="form-control form-control-lg">
-                                <option {{-- value="{{ $personne->region }}" --}}>Aucune region selectionnée</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="departement-{{ $personne->id }}" class="form-label">Département</label>
-                            <select name="departement" id="departement-{{ $personne->id }}" class="form-control form-control-lg">
-                                <option {{-- value="{{ $personne->departement }}" --}}>Aucune departement selectionnée</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="sous-prefecture-{{ $personne->id }}" class="form-label">Sous-préfecture</label>
-                            <select name="sous-prefecture" id="sous-prefecture-{{ $personne->id }}" class="form-control form-control-lg">
-                                <option {{-- value="{{ $personne->sous-prefecture }}" --}}>Aucune sous-prefecture selectionnée</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="commune-{{ $personne->id }}" class="form-label">Commune</label>
-                            <select name="commune" id="commune-{{ $personne->id }}" class="form-control form-control-lg">
-                                <option {{-- value="{{ $personne->commune }}" --}}>Aucune commune selectionnée</option>
-                            </select>
-                        </div>
+
                         <div class="col-md-6 mb-3">
                             <label for="lieu_vote-{{ $personne->id }}" class="form-label">Lieu de vote</label>
-                            <select name="lieu_vote" id="lieu_vote-{{ $personne->id }}" class="form-control form-control-lg">
-                                <option value="">{{ $personne->lieu_vote }}</option>
-                            </select>
+                            <input type="text" name="lieu_vote" id="lieu_vote-{{ $personne->id }}" class="form-control form-control-lg" value="{{ $personne->lieu_vote }}" required>
                         </div>
                     </div>
                 </div>
